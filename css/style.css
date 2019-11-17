@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ol,ul{
+	list-style-type: none;
+}
+a{
+	color: #666;
+	text-decoration: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+#top,#head,#nav,#banner,#main,#footer{
+	height: 100px;
+	width: 100%;
+	border: 1px solid #000;
+}
+.container{
+	width: 1280px;
+	border: 1px solid #f00;
+	margin: 0px auto;
+}
+#top{
+	height: 5px;
+	background-color: green;
+}
