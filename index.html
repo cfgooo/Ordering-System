@@ -3,27 +3,179 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ordering-System</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		#banner{
+        	height:430px;
+        }
+		.swiper-container {
+            width: 30%;
+            height: 432px;
+        }
+		.swiper-slide {
+            text-align: center;
+            font-size: 19px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+	</style>
 </head>
 <body>
-	<div id="top">
-		<div class="container"></div>
-	</div>
 	<div id="head">
-		<div class="container"></div>
+		<div class="container">
+			<div class="head_left"></div>
+			<div class="head_right">
+				<a href="#">登录</a>
+			</div>
+		</div>
 	</div>
 	<div id="nav">
-		<div class="container"></div>
+		<div class="container">
+			<div class="nav_left left">
+				<img src="images/logo.png" alt="">
+			</div>
+			<div class="nav_right">
+				<ul class="right">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li><a href="#">订单统计</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="nav2">
+		<div class="container">
+			<div class="nav2_left left">
+				<p>今日菜品</p>
+			</div>
+			<div class="nav2_right">
+				<ul>
+					<li><a href="#">桂苑餐厅</a></li>
+					<li><a href="#">风华餐厅</a></li>
+					<li><a href="#">阳光餐厅</a></li>
+					<li><a href="#">清真餐厅</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div id="banner">
-		<div class="container"></div>
+		<div class="container">
+		<div class="swiper-container left">
+			<p>今日热卖</p>
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="images/1.png" width="30%;" height="230"></div>
+	            <div class="swiper-slide"><img src="images/2.png" width="30%;" height="230"></div>
+	            <div class="swiper-slide"><img src="images/3.png" width="30%;" height="230"></div>
+	            <div class="swiper-slide"><img src="images/4.png" width="30%;" height="230"></div>
+	        </div>
+        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <div class="swiper-button-next">1</div>
+	        <div class="swiper-button-prev"></div>
+    	</div>
+    	<div class="banner-nav-bg"></div>
+		<!-- </div> -->
+
+
+		<div class="swiper-container right">
+			<p>今日推荐</p>
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="images/1.png" width="30%;" height="230"></div>
+	            <div class="swiper-slide"><img src="images/2.png" width="30%;" height="230"></div>
+	            <div class="swiper-slide"><img src="images/3.png" width="30%;" height="230"></div>
+	            <div class="swiper-slide"><img src="images/4.png" width="30%;" height="230"></div>
+	        </div>
+        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <div class="swiper-button-next">1</div>
+	        <div class="swiper-button-prev"></div>
+    	</div>
+    	<div class="banner-nav-bg"></div>
+		</div>
 	</div>
+
 	<!-- 全部菜品 -->
 	<div id="main">
-		<div class="container"></div>
+		<div class="container">
+			<ul>
+				<li>
+					<div>
+						<img src="images/one.jpg" alt="">
+					</div>
+					<h2>水浒牛肉</h2>
+					<h3>location</h3>
+					<h3>price</h3>
+					<p>香辣美味</p>
+				</li>
+				<li>
+					<div>
+						<img src="images/one.jpg" alt="">
+					</div>
+					<h2>name</h2>
+					<h3>location</h3>
+					<h3>price</h3>
+					<p>taste</p>
+				</li>
+				<li>
+					<div>
+						<img src="images/one.jpg" alt="">
+					</div>
+					<h2>name</h2>
+					<h3>location</h3>
+					<h3>price</h3>
+					<p>taste</p>
+				</li>
+				<li>
+					<div>
+						<img src="images/one.jpg" alt="">
+					</div>
+					<h2>name</h2>
+					<h3>location</h3>
+					<h3>price</h3>
+					<p>taste</p>
+				</li>
+				
+			</ul>
+		</div>
 	</div>
 	<div id="footer">
 		<div class="container"></div>
 	</div>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true,
+        autoplay: 3000,
+
+        
+        speed: 1000,
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next',
+        effect: 'fade',//  effect: 'flip',effect: 'coverflow',slide', 'fade',cube
+        grabCursor: true,
+        cube: {
+            shadow: false,
+            slideShadows: false,
+            shadowOffset: 20,
+            shadowScale: 0.94
+        }
+    });
+</script>
 </body>
 </html>

@@ -15,7 +15,7 @@ a{
 .right{
 	float: right;
 }
-#top,#head,#nav,#banner,#main,#footer{
+#head,#nav,#banner,#main,#footer{
 	height: 100px;
 	width: 100%;
 	border: 1px solid #000;
@@ -25,7 +25,86 @@ a{
 	border: 1px solid #f00;
 	margin: 0px auto;
 }
-#top{
-	height: 5px;
-	background-color: green;
+#head{
+	height: 30px;
+	background-color: black;
+}
+#head .head_right a{
+	float: right;
+}
+#nav{
+	height: 140px;
+	background-color: #EEEEEE;
+}
+#nav img{
+
+}
+#nav li{
+	float: left;
+	margin: 0px 45px;
+	line-height: 110px;
+}
+#nav li a{
+	color: #666666;
+	font-weight: bold;
+}
+#nav li a:hover{
+	color: #00925F;
+}
+#nav2{
+	height: 100px;
+	width: 100%;
+	border: 1px solid #000;
+}
+#nav2 .nav2_left p{
+	float: left;
+}
+#nav2 li{
+	width: 200px;
+	float: left;
+	margin: 0px 50px;
+	line-height: 90px;
+}
+#nav2 li a{ 
+	color: #666666;
+	font-weight: bold;
+}
+#nav2 li a:hover{
+	color: #00925F;
+}
+#banner p{
+	text-align: center;
+	/*height: 10px;*/
+}
+#banner img{
+	width: 200px;
+}
+/*滚动栏图片大小更改*/
+#main{
+	height: 1700px;
+	background-color: #F2F2F2;
+}
+#main ul{
+	width: 1263px;
+	margin: 10px auto;
+}
+#main li{
+	width: 300px;
+	float: left;
+}
+#main li img{
+	width: 300px;
+}
+#main li h2{
+	margin-top: 10px;
+	text-align: center;
+}
+#main li h3{
+	margin-top: 10px;
+	text-align: center;
+}
+#main li p{
+	text-align: center;
+	margin: 10px 0px;
+	font-size: 12px;
 }
