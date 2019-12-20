@@ -1,0 +1,88 @@
+#car{
+	height: 50px;
+    line-height: 50px;
+    background-color: #DAD58C;
+}
+.name{
+	width: 320px;
+	text-align: center;
+	font-family: "Arial";
+	font-size: 25px;
+    opacity: .75;
+
+	
+}
+.amount{
+	width: 320px;
+	text-align: center;
+	font-family: "Arial";
+	font-size: 25px;
+	opacity: .75;
+
+	
+}
+.price{
+	width: 320px;
+	text-align: center;
+	font-family: "Arial";
+	font-size: 25px;
+	opacity: .75;
+}
+.action{
+	width: 320px;
+	text-align: center;
+	font-family: "Arial";
+	font-size: 25px;
+	opacity: .75;
+}
+#sum{
+	text-align: right;
+	font-size: 20px;
+}
+table td{
+	width: 320px;
+	height: 50px;
+	text-align: center;
+	font-family: "YouYuan";
+	font-size: 20px;
+}
+.delete{
+	border: none;
+	width: 50px;
+	height: 50px;
+	background: url(../images/delete.png) center no-repeat;
+
+}
+.delete:hover{
+	cursor: pointer;
+	border: solid crimson;
+
+}
+#add{
+	position: relative;
+}
+#add a{
+	display: block;
+	margin: 40px 0px 0px 40px;
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+	float: right;
+    ttext-indent: 50px;
+    text-align: center;
+    border: solid #dddddd;
+    font-size: 20px;
+    color: #545454;
+    height: 24px;
+    font-family: "YouYuan";
+    bborder: outset;
+    background-color: #
+    
+}
+#add a:hover{
+	cursor: pointer;
+	border: inset;
+	background-color:#dddddd;
+
+}

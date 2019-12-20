@@ -1,0 +1,71 @@
+.main {
+    display: flex;
+}
+
+.main aside {
+    width: 20rem;
+}
+
+.main canvas {
+    flex-grow: 1;
+    display: block; 
+    height: 150px; 
+    width: 300px;
+}
+
+aside>div {
+    position: relative;
+    width: 20rem;
+    height: 10rem;
+    bborder: solid .5px silver;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside>div a:first-child {
+    width: 7rem;
+    height: 7rem;
+    background-image: url(../images/7.jpg);
+    background-size: 7rem 7rem;
+    border-radius: 50%;
+    border:2px solid hsla(0,0%,100%,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+    font-family: "STCaiyun";
+    font-size: 30px;
+    z-index: 1;
+}
+
+aside>div div:last-child {
+    position: absolute;
+    left: 2rem;
+    width: 30rem;
+    background: #777;
+    z-index: 0;
+    padding: 1rem;
+    text-align: right;
+    color: #dddddd;
+    transform: rotate(-90deg);
+    transform-origin: 8rem 50%;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+aside>div a:first-child:hover+div {
+    transform: rotate(0);
+    opacity: 1;
+}
+.content{
+    padding-top: 50px;
+    text-align: justify;
+}
+.content .expanded{
+    display: block;
+}
+.content .collapse{
+    display: none;
+}

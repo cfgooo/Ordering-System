@@ -1,0 +1,388 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ol,ul{
+	list-style-type: none;
+}
+#head li{
+	color: #ffffff;
+	float: right;
+}
+a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.all{
+	display: grid;
+}
+#head,#nav,#banner,#main,#footer{
+	height: 100px;
+	width: 100%;
+}
+.container{
+	width: 1280px;
+	margin: 0px auto;
+}
+#head{
+	height: 30px;
+	background-color: black;
+	background-color: #8F5714;
+	border: 2px solid #82620C;
+}
+#head .head_right a{
+	float: right;
+}
+#nav{
+	height: 140px;
+	background-image: url(../images/2.jpg);
+}
+#nav img{
+}
+#nav li{
+	float: left;
+	margin: 0px 45px;
+	line-height: 110px;
+}
+#nav li a{
+	color: #666666;
+	font-weight: bold;
+}
+#nav li a:hover{
+	color: #824C0C;
+}
+#nav2{
+	height: 70px;
+	border: 2px solid #dddddd;
+	background-color: #DAD58C;
+	
+}
+#nav2 .nav2_left p{
+	float: left;
+}
+#nav2 li{
+	text-align: center;
+	width: 300px;
+	float: left;
+	margin: 0px auto;
+	line-height: 65px;
+	border-style:outset;
+	border-color:hsla(0,0%,100%,.5); 
+    background-color: hsla(0,0%,100%,.5);
+   
+}
+#nav2 li a{ 
+	color: #666666;
+	font-weight: bold;
+	text-decoration: none;
+}
+#nav2 li:hover{
+	background-color: hsla(0,0%,100%,.75);
+	border-style:inset;
+}
+.expanded{
+	display: block;
+}
+.collapse{
+	display: none;
+}
+#banner{
+    height:400px;
+    background-image: url(../images/2.jpg);
+    bbackground-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+   	
+
+}
+/*调整字体位置*/
+#banner h1:first-of-type{
+	text-align: left;
+	margin-left: 210px;
+	margin-bottom: 80px;
+}
+#banner h1:last-of-type{
+	text-align: right;
+	margin-right: 220px;
+	margin-top: -120px;
+	
+}
+#banner h1{
+	font-family: "STCaiyun";
+    font-size: 40px;
+    opacity: .5;
+}
+.box{
+	position: relative;
+	height: 400px;
+
+}
+/*调整图片位置*/
+.leftside{
+	margin-left: 0px;
+	margin-top: -50px; 
+}
+.rightside{ 
+	margin-left:680px;
+	margin-top: 28px; 
+}
+.activeimg ul li{
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
+.activeimg ul li:nth-child(1){
+	opacity: 1;
+	display: block;
+}
+.activeimg ul li img{
+	width: 600px;
+	height: 300px;
+	
+
+}
+/*滚动栏图片大小更改*/
+.main_head{
+	position: relative;
+    margin: 0;
+    height: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #242424;
+}
+.main_head span{
+	position: absolute;
+    left: 372px;
+    height: 40px;
+    width: 482px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    
+    font-family: "STCaiyun";
+    font-size: 40px;
+    opacity: .75;
+
+}
+#main{
+	height: 770px;
+	background-image: url(../images/1.jpg);
+	background-size: 505px 370px;
+	border-top: 7px solid #dddddd;
+	}
+#main ul{
+	width: 1256px;
+	margin: 10px auto;
+    overflow: hidden;
+}
+#main li{
+	height: 300px;
+	width: 300px;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    padding: 20px 0 20px;
+    margin-bottom:10px;
+    background-color: hsla(0,0%,100%,.5);
+
+
+}
+#main li:hover{
+	background-color: hsla(0,0%,100%,.75);
+
+}
+#main li div.flip1{
+	text-align:center;
+
+}
+#main li:hover .flip1{
+	cursor: pointer;
+}
+#main li div.panel1{
+	height:50px;
+	display: none;
+	margin-left: 75px;
+	width: 150px;
+	border:1px solid #A57E4D;
+}
+#main li div.flip2{
+	text-align:center;
+}
+#main li:hover .flip2{
+	cursor: pointer;
+}
+#main li div.panel2{
+	height:50px;
+	display: none;
+	margin-left: 75px;
+	width: 150px;
+	border:1px solid #A57E4D;
+}
+#main li div.flip3{
+	text-align:center;
+}
+#main li:hover .flip3{
+	cursor: pointer;
+}
+#main li div.panel3{
+	height:50px;
+	display: none;
+	margin-left: 75px;
+	width: 150px;
+	border:1px solid #A57E4D;
+}
+#main li div.flip4{
+	text-align:center;
+}
+#main li:hover .flip4{
+	cursor: pointer;
+}
+#main li div.panel4{
+	height:50px;
+	display: none;
+	margin-left: 75px;
+	width: 150px;
+	border:1px solid #A57E4D;
+}
+#main li div.flip5{
+	text-align:center;
+}
+#main li:hover .flip5{
+	cursor: pointer;
+}
+#main li div.panel5{
+	height:50px;
+	display: none;
+	margin-left: 75px;
+	width: 150px;
+	border:1px solid #A57E4D;
+}
+#main li div.flip6{
+	text-align:center;
+}
+#main li:hover .flip6{
+	cursor: pointer;
+}
+#main li div.panel6{
+	height:50px;
+	display: none;
+	margin-left: 75px;
+	width: 150px;
+	border:1px solid #A57E4D;
+}
+#main li div.flip7{
+	text-align:center;
+}
+#main li:hover .flip7{
+	cursor: pointer;
+}
+#main li div.panel7{
+	height:50px;
+	display: none;
+	margin-left: 75px;
+	width: 150px;
+	border:1px solid #A57E4D;
+}
+#main li div.flip8{
+	text-align:center;
+}
+#main li:hover .flip8{
+	cursor: pointer;
+}
+#main li div.panel8{
+	height:50px;
+	display: none;
+	margin-left: 75px;
+	width: 150px;
+	border:1px solid #A57E4D;
+}
+#main li img{
+	/*width: 300px;*/
+	width: 170px;
+    height: 170px;
+    margin: 0 auto 10px;
+    border:5px solid hsla(0,0%,100%,.5);
+    background-origin: border-box;
+}
+.food_name{
+	margin-top: 10px;
+	text-align: center;
+}
+.food_location{
+	margin-top: 10px;
+	text-align: center;
+}
+.food_price{
+	margin-top: 10px;
+	text-align: center;
+}
+.food_taste{
+	margin-top: 10px;
+	text-align: center;
+}
+.add_btn {
+    position: absolute;
+    width: 122px;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -61px;
+    line-height: 22px;
+    display: none;
+    color: #755414;
+    font-size: 12px;
+    border: 1px solid  #755414;
+}
+#main li:hover .add_btn{
+	display: block;
+}
+#main li:hover .food_name{
+	opacity: 0;
+}
+#main li .add_btn:hover{
+	background-color: #A57E4D;
+	color: white;
+	cursor: pointer;
+}
+#footer{
+	position: relative;
+}
+#footer a{
+	display: block;
+	margin: 40px 0 0 50px;
+	float: left;
+    text-indent: 50px;
+    font-size: 14px;
+    color: #545454;
+    height: 24px;
+}
+#footer a:HOVER{
+	color: #E8E8E8;
+}
+
+#footer .school_main
+{
+    background: url(../images/shouye.png) left center no-repeat;
+}
+
+#footer .gz_email
+{
+    background: url(../images/email.png) left center no-repeat;
+}
+#footer .gz_mag{
+    background: url(../images/github.png) left center no-repeat;
+}
+#footer .gz_wechat{
+    background: url(../images/wechat.png) left center no-repeat;
+}
+#footer img{
+	height: 100px;
+	width: 100px;
+}

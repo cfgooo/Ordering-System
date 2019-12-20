@@ -3,179 +3,645 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ordering-System</title>
-	<link rel="stylesheet" type="text/css" href="css/swiper.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<style>
-		#banner{
-        	height:430px;
-        }
-		.swiper-container {
-            width: 30%;
-            height: 432px;
-        }
-		.swiper-slide {
-            text-align: center;
-            font-size: 19px;
-            background: #fff;
-
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-	<div id="head">
-		<div class="container">
-			<div class="head_left"></div>
-			<div class="head_right">
-				<a href="#">登录</a>
+	<div class="all">
+		<div id="head">
+			<div class="container">
+				<div class="head_left"></div>
+				<div class="head_right">
+					<li><a href="#">注销</a></li>
+					<li><a href="#">登录</a></li>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div id="nav">
-		<div class="container">
-			<div class="nav_left left">
-				<img src="images/logo.png" alt="">
-			</div>
-			<div class="nav_right">
-				<ul class="right">
-					<li><a href="#">首页</a></li>
-					<li><a href="#">我的订单</a></li>
-					<li><a href="#">订单统计</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div id="nav2">
-		<div class="container">
-			<div class="nav2_left left">
-				<p>今日菜品</p>
-			</div>
-			<div class="nav2_right">
-				<ul>
-					<li><a href="#">桂苑餐厅</a></li>
-					<li><a href="#">风华餐厅</a></li>
-					<li><a href="#">阳光餐厅</a></li>
-					<li><a href="#">清真餐厅</a></li>
-				</ul>
+		<div id="nav">
+			<div class="container">
+				<div class="nav_left left">
+					<img src="images/logo.png" alt="">
+				</div>
+				<div class="nav_right">
+					<ul class="right">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="my.html">我的订单</a></li>
+						<li><a href="history.html">订单统计</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div id="banner">
-		<div class="container">
-		<div class="swiper-container left">
-			<p>今日热卖</p>
-	        <div class="swiper-wrapper">
-	            <div class="swiper-slide"><img src="images/1.png" width="30%;" height="230"></div>
-	            <div class="swiper-slide"><img src="images/2.png" width="30%;" height="230"></div>
-	            <div class="swiper-slide"><img src="images/3.png" width="30%;" height="230"></div>
-	            <div class="swiper-slide"><img src="images/4.png" width="30%;" height="230"></div>
-	        </div>
-        <!-- Add Pagination -->
-	        <div class="swiper-pagination"></div>
-	        <div class="swiper-button-next">1</div>
-	        <div class="swiper-button-prev"></div>
-    	</div>
-    	<div class="banner-nav-bg"></div>
-		<!-- </div> -->
-
-
-		<div class="swiper-container right">
-			<p>今日推荐</p>
-	        <div class="swiper-wrapper">
-	            <div class="swiper-slide"><img src="images/1.png" width="30%;" height="230"></div>
-	            <div class="swiper-slide"><img src="images/2.png" width="30%;" height="230"></div>
-	            <div class="swiper-slide"><img src="images/3.png" width="30%;" height="230"></div>
-	            <div class="swiper-slide"><img src="images/4.png" width="30%;" height="230"></div>
-	        </div>
-        <!-- Add Pagination -->
-	        <div class="swiper-pagination"></div>
-	        <div class="swiper-button-next">1</div>
-	        <div class="swiper-button-prev"></div>
-    	</div>
-    	<div class="banner-nav-bg"></div>
+		<div id="nav2">
+			<div class="container">
+				<div class="nav2_right">
+					<ul>
+						<li><a class="active" href="res1"><h2>桂苑餐厅</h2></a></li>
+						<li><a href="res2"><h2>风华餐厅</h2></a></li>
+						<li><a href="res3"><h2>阳光餐厅</h2></a></li>
+						<li><a href="res4"><h2>清真餐厅</h2></a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	</div>
-
-	<!-- 全部菜品 -->
-	<div id="main">
-		<div class="container">
-			<ul>
-				<li>
-					<div>
-						<img src="images/one.jpg" alt="">
+		<div id="res1" class="expanded">
+			<div id="banner">
+				<div class="container">
+					<div class="box">
+						<h1>今日热卖</h1>
+						<div class="activeimg leftside">
+							<ul>
+								<li><img src="images/six.jpg">
+								</li>
+								<li><img src="images/four.jpg">
+								</li>
+								<li><img src="images/three.jpg">
+								</li>
+							</ul>
+						</div>
+						<h1>今日推荐</h1>
+						<div class="activeimg rightside">
+							<ul>
+								<li><img src="images/eight.jpg">
+								</li>
+								<li><img src="images/seven.jpg">
+								</li>
+								<li><img src="images/one.jpg">
+								</li>
+							</ul>
+						</div>
 					</div>
-					<h2>水浒牛肉</h2>
-					<h3>location</h3>
-					<h3>price</h3>
-					<p>香辣美味</p>
-				</li>
-				<li>
-					<div>
-						<img src="images/one.jpg" alt="">
+				</div>
+			</div>
+
+			<!-- 全部菜品 -->
+			<div id="main">
+				<div class="container">
+					<h2 class="main_head"><span>全部菜品</span></h2>
+					<ul>
+						<li>
+							<div>
+								<img src="images/one.jpg" alt="">
+							</div>
+							<div class="panel1">
+								<p>￥5</p>
+								<p>美味可口</p>
+								<div class="add_btn" onclick="addData(this)" id="蒸包">加入购物车</div>
+							</div>
+							<div class="flip1">
+								<h2>蒸包</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/two.jpg" alt="">
+							</div>
+							<div class="panel2">
+								
+								<p>￥7</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="煎饼果子">加入购物车</div>
+							</div>
+							<div class="flip2">
+								<h2>煎饼果子</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/three.jpg" alt="">
+							</div>
+							<div class="panel3">
+								
+								<p>￥10</p>
+								<p>咸香麻辣</p>
+								<div class="add_btn" onclick="addData(this)" id="烧鸭面">加入购物车</div>
+							</div>
+							<div class="flip3">
+								<h2>烧鸭面</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/four.jpg" alt="">
+							</div>
+							<div class="panel4">
+								
+								<p>￥5.5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="泡椒牛蛙">加入购物车</div>
+							</div>
+							<div class="flip4">
+								<h2>泡椒牛蛙</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/five.jpg" alt="">
+							</div>
+							<div class="panel5">
+								
+								<p>￥4.5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="红烧猪蹄">加入购物车</div>
+							</div>
+							<div class="flip5">
+								<h2>红烧猪蹄</h2>
+							</div>
+							</li>
+						<li>
+							<div>
+								<img src="images/six.jpg" alt="">
+							</div>
+							<div class="panel6">
+								
+								<p>￥1</p>
+								<p>酥脆可口</p>
+								<div class="add_btn" onclick="addData(this)" id="炸春卷">加入购物车</div>
+							</div>
+							<div class="flip6">
+								<h2>炸春卷</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/seven.jpg" alt="">
+							</div>
+							<div class="panel7">
+								
+								<p>￥5</p>
+								<p>美容养颜</p>
+								<div class="add_btn" onclick="addData(this)" id="滋补乌鸡汤">加入购物车</div>
+							</div>
+							<div class="flip7">
+								<h2>滋补乌鸡汤</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/eight.jpg" alt="">
+							</div>
+							<div class="panel8">
+								
+								<p>￥6</p>
+								<p>香气诱人</p>
+								<div class="add_btn" onclick="addData(this)" id="韭菜水饺">加入购物车</div>
+							</div>
+							<div class="flip8">
+								<h2>韭菜水饺</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="res2" class="collapse">
+			<div id="banner">
+				<div class="container">
+					<div class="box">
+						<h1>今日热卖</h1>
+						<div class="activeimg leftside">
+							<ul>
+								<li><img src="images/one.jpg">
+								</li>
+								<li><img src="images/four.jpg">
+								</li>
+								<li><img src="images/three.jpg">
+								</li>
+							</ul>
+						</div>
+						<h1>今日推荐</h1>
+						<div class="activeimg rightside">
+							<ul>
+								<li><img src="images/five.jpg">
+								</li>
+								<li><img src="images/seven.jpg">
+								</li>
+								<li><img src="images/one.jpg">
+								</li>
+							</ul>
+						</div>
 					</div>
-					<h2>name</h2>
-					<h3>location</h3>
-					<h3>price</h3>
-					<p>taste</p>
-				</li>
-				<li>
-					<div>
-						<img src="images/one.jpg" alt="">
+				</div>
+			</div>
+
+			<!-- 全部菜品 -->
+			<div id="main">
+				<div class="container">
+					<h2 class="main_head"><span>全部菜品</span></h2>
+					<ul>
+						<li>
+							<div>
+								<img src="images/seven.jpg" alt="">
+							</div>
+							<div class="panel1">
+								<p>￥5</p>
+								<p>美容养颜</p>
+								<div class="add_btn" onclick="addData(this)" id="滋补乌鸡汤">加入购物车</div>
+							</div>
+							<div class="flip1">
+								<h2>滋补乌鸡汤</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/three.jpg" alt="">
+							</div>
+							<div class="panel2">
+								<p>￥10</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="烧鸭面">加入购物车</div>
+							</div>
+							<div class="flip2">
+								<h2>烧鸭面</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/two.jpg" alt="">
+							</div>
+							<div class="panel3">
+								<p>￥7</p>
+								<p>咸香麻辣</p>
+								<div class="add_btn" onclick="addData(this)" id="煎饼果子">加入购物车</div>
+							</div>
+							<div class="flip3">
+								<h2>煎饼果子</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/four.jpg" alt="">
+							</div>
+							<div class="panel4">
+								<p>￥5.5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="泡椒牛蛙">加入购物车</div>
+							</div>
+							<div class="flip4">
+								<h2>泡椒牛蛙</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/five.jpg" alt="">
+							</div>
+							<div class="panel5">
+								<p>￥4.5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="红烧猪蹄">加入购物车</div>
+							</div>
+							<div class="flip5">
+								<h2>红烧猪蹄</h2>
+							</div>
+							</li>
+						<li>
+							<div>
+								<img src="images/six.jpg" alt="">
+							</div>
+							<div class="panel6">
+								<p>￥1</p>
+								<p>酥脆可口</p>
+								<div class="add_btn" onclick="addData(this)" id="炸春卷">加入购物车</div>
+							</div>
+							<div class="flip6">
+								<h2>炸春卷</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/one.jpg" alt="">
+							</div>
+							<div class="panel7">
+								<p>￥5</p>
+								<p>美味可口</p>
+								<div class="add_btn" onclick="addData(this)" id="蒸包">加入购物车</div>
+							</div>
+							<div class="flip7">
+								<h2>蒸包</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/eight.jpg" alt="">
+							</div>
+							<div class="panel8">
+								<p>￥6</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="韭菜水饺">加入购物车</div>
+							</div>
+							<div class="flip8">
+								<h2>韭菜水饺</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="res3" class="collapse">
+			<div id="banner">
+				<div class="container">
+					<div class="box">
+						<h1>今日热卖</h1>
+						<div class="activeimg leftside">
+							<ul>
+								<li><img src="images/two.jpg">
+								</li>
+								<li><img src="images/one.jpg">
+								</li>
+								<li><img src="images/three.jpg">
+								</li>
+							</ul>
+						</div>
+						<h1>今日推荐</h1>
+						<div class="activeimg rightside">
+							<ul>
+								<li><img src="images/eight.jpg">
+								</li>
+								<li><img src="images/four.jpg">
+								</li>
+								<li><img src="images/one.jpg">
+								</li>
+							</ul>
+						</div>
 					</div>
-					<h2>name</h2>
-					<h3>location</h3>
-					<h3>price</h3>
-					<p>taste</p>
-				</li>
-				<li>
-					<div>
-						<img src="images/one.jpg" alt="">
+				</div>
+			</div>
+
+			<!-- 全部菜品 -->
+			<div id="main">
+				<div class="container">
+					<h2 class="main_head"><span>全部菜品</span></h2>
+					<ul>
+						<li>
+							<div>
+								<img src="images/five.jpg" alt="">
+							</div>
+							<div class="panel1">
+								<p>￥4.5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="红烧猪蹄">加入购物车</div>
+							</div>
+							<div class="flip1">
+								<h2>红烧猪蹄</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/two.jpg" alt="">
+							</div>
+							<div class="panel2">
+								<p>￥7</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="煎饼果子">加入购物车</div>
+							</div>
+							<div class="flip2">
+								<h2>煎饼果子</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/three.jpg" alt="">
+							</div>
+							<div class="panel3">
+								<p>￥10</p>
+								<p>咸香麻辣</p>
+								<div class="add_btn" onclick="addData(this)" id="烧鸭面">加入购物车</div>
+							</div>
+							<div class="flip3">
+								<h2>烧鸭面</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/six.jpg" alt="">
+							</div>
+							<div class="panel4">
+								<p>￥1</p>
+								<p>酥脆可口</p>
+								<div class="add_btn" onclick="addData(this)" id="炸春卷">加入购物车</div>
+							</div>
+							<div class="flip4">
+								<h2>炸春卷</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/five.jpg" alt="">
+							</div>
+							<div class="panel5">
+								<p>￥5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="蒸包">加入购物车</div>
+							</div>
+							<div class="flip5">
+								<h2>蒸包</h2>
+							</div>
+							</li>
+						<li>
+							<div>
+								<img src="images/four.jpg" alt="">
+							</div>
+							<div class="panel6">
+								<p>￥5.5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="泡椒牛蛙">加入购物车</div>
+							</div>
+							<div class="flip6">
+								<h2>泡椒牛蛙</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/seven.jpg" alt="">
+							</div>
+							<div class="panel7">
+								<p>￥5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="滋补乌鸡汤">加入购物车</div>
+							</div>
+							<div class="flip7">
+								<h2>滋补乌鸡汤</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/eight.jpg" alt="">
+							</div>
+							<div class="panel8">
+								<p>￥6</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="韭菜水饺">加入购物车</div>
+							</div>
+							<div class="flip8">
+								<h2>韭菜水饺</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="res4" class="collapse">
+			<div id="banner">
+				<div class="container">
+					<div class="box">
+						<h1>今日热卖</h1>
+						<div class="activeimg leftside">
+							<ul>
+								<li><img src="images/one.jpg">
+								</li>
+								<li><img src="images/six.jpg">
+								</li>
+								<li><img src="images/five.jpg">
+								</li>
+							</ul>
+						</div>
+						<h1>今日推荐</h1>
+						<div class="activeimg rightside">
+							<ul>
+								<li><img src="images/seven.jpg">
+								</li>
+								<li><img src="images/four.jpg">
+								</li>
+								<li><img src="images/three.jpg">
+								</li>
+							</ul>
+						</div>
 					</div>
-					<h2>name</h2>
-					<h3>location</h3>
-					<h3>price</h3>
-					<p>taste</p>
-				</li>
-				
-			</ul>
+				</div>
+			</div>
+
+			<!-- 全部菜品 -->
+			<div id="main">
+				<div class="container">
+					<h2 class="main_head"><span>全部菜品</span></h2>
+					<ul>
+						<li>
+							<div>
+								<img src="images/one.jpg" alt="">
+							</div>
+							<div class="panel1">
+								<p>阳光餐厅</p>
+								<p>￥5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="蒸包">加入购物车</div>
+							</div>
+							<div class="flip1">
+								<h2>蒸包</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/two.jpg" alt="">
+							</div>
+							<div class="panel2">
+								<p>￥7</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="煎饼果子">加入购物车</div>
+							</div>
+							<div class="flip2">
+								<h2>煎饼果子</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/three.jpg" alt="">
+							</div>
+							<div class="panel3">
+								<p>￥10</p>
+								<p>咸香麻辣</p>
+								<div class="add_btn" onclick="addData(this)" id="烧鸭面">加入购物车</div>
+							</div>
+							<div class="flip3">
+								<h2>烧鸭面</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/four.jpg" alt="">
+							</div>
+							<div class="panel4">
+								<p>￥5.5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="泡椒牛蛙">加入购物车</div>
+							</div>
+							<div class="flip4">
+								<h2>泡椒牛蛙</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/five.jpg" alt="">
+							</div>
+							<div class="panel5">
+								<p>￥4.5</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="红烧猪蹄">加入购物车</div>
+							</div>
+							<div class="flip5">
+								<h2>红烧猪蹄</h2>
+							</div>
+							</li>
+						<li>
+							<div>
+								<img src="images/six.jpg" alt="">
+							</div>
+							<div class="panel6">
+								<p>￥1</p>
+								<p>酥脆可口</p>
+								<div class="add_btn" onclick="addData(this)" id="炸春卷">加入购物车</div>
+							</div>
+							<div class="flip6">
+								<h2>炸春卷</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/seven.jpg" alt="">
+							</div>
+							<div class="panel7">
+								<p>￥5</p>
+								<p>滋补美颜</p>
+								<div class="add_btn" onclick="addData(this)" id="滋补乌鸡汤">加入购物车</div>
+							</div>
+							<div class="flip7">
+								<h2>滋补乌鸡汤</h2>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/eight.jpg" alt="">
+							</div>
+							<div class="panel8">
+								<p>￥6</p>
+								<p>香辣美味</p>
+								<div class="add_btn" onclick="addData(this)" id="韭菜水饺">加入购物车</div>
+							</div>
+							<div class="flip8">
+								<h2>韭菜水饺</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container">
+					<a href="http://www.uestc.edu.cn/" class="school_main">
+						<span>学校首页</span>
+					</a>
+					<a href="https://github.com/cfgooo/Ordering-System" class="gz_mag">
+						<span>关于我们</span>
+					</a>
+					<a href="chengfan@std.uestc.edu.con" class="gz_email">
+						<span>负责人信箱</span>
+					</a>
+					<a class="gz_wechat">
+						<span class="cha-vers"> 官方微信        :</span>
+					</a>
+					<img src="images/erweima.png">
+			</div>
 		</div>
 	</div>
-	<div id="footer">
-		<div class="container"></div>
-	</div>
-<script type="text/javascript" src="js/swiper.js"></script>
-<script type="text/javascript">
-	var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        loop: true,
-        autoplay: 3000,
-
-        
-        speed: 1000,
-        prevButton: '.swiper-button-prev',
-        nextButton: '.swiper-button-next',
-        effect: 'fade',//  effect: 'flip',effect: 'coverflow',slide', 'fade',cube
-        grabCursor: true,
-        cube: {
-            shadow: false,
-            slideShadows: false,
-            shadowOffset: 20,
-            shadowScale: 0.94
-        }
-    });
-</script>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/sql.js"></script>
 </body>
 </html>

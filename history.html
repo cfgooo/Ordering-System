@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单统计</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/history.css">
+</head>
+<body>
+  <div class="all">
+    <div id="head">
+			<div class="container">
+				<div class="head_left"></div>
+				<div class="head_right">
+					<li><a href="#">注销</a></li>
+					<li><a href="#">登录</a></li>
+				</div>
+			</div>
+		</div>
+    <div id="nav">
+      <div class="container">
+        <div class="nav_left left">
+          <img src="images/logo.png" alt="">
+        </div>
+        <div class="nav_right">
+          <ul class="right">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="my.html">我的订单</a></li>
+            <li><a href="history.html">订单统计</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <aside>
+        <div>
+          <a href="p1" class="active">菜品</a>
+          <div>菜品统计信息</div>   
+        </div>
+        <div>
+          <a href="p2">价格</a>
+          <div>订餐价格趋势</div>
+        </div>
+        <div>
+          <a href="p3">口味</a>
+          <div>喜好口味比重</div>
+        </div>
+        <div>
+        <a href="p4">食材</a>
+        <div>食材分步信息</div>
+        </div>
+      </aside>
+      <div class="content">
+        <div id="p1" class="expanded">
+          <div style="height: 900px; width: 1000px; position: relative; padding-bottom: 0px;">
+            <canvas id="Chart1"></canvas>
+          </div>
+        </div>
+        <div id="p2" class="collapse">
+          <div style="height: 900px; width: 1000px; position: relative; padding-bottom: 0px;">
+            <canvas id="Chart2"></canvas>
+          </div>
+        </div>
+        <div id="p3" class="collapse">
+          <div style="height: 900px; width: 1000px; position: relative; padding-bottom: 0px;">
+            <canvas id="Chart3"></canvas>
+          </div>
+        </div>
+        <div id="p4" class="collapse">
+          <div style="height: 900px; width: 1000px; position: relative; padding-bottom: 0px;">
+            <canvas id="Chart4"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="node_modules\chart.js\dist\chart.js"></script>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript">
+		// <canvas id="popChart" width="600" height="400"></canvas>
+		var popCanvas = $("#Chart1");
+		var popCanvas = document.getElementById("Chart1");
+		var popCanvas = document.getElementById("Chart1").getContext("2d");
+		var barChart = new Chart(popCanvas, {
+  type: 'bar',
+  data: {
+    labels: ["水煮肉片（桂苑餐厅）", "煎饼果子（风华餐厅）", "蘸水饺（阳光餐厅）"],
+    datasets: [{
+      label: '销量',
+      data: [602, 480, 390],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(255, 206, 86, 0.6)',
+      ]
+    }]
+  }
+});
+  </script>
+<script type="text/javascript">
+    // <canvas id="popChart" width="600" height="400"></canvas>
+    var popCanvas = $("#Chart2");
+    var popCanvas = document.getElementById("Chart2");
+    var popCanvas = document.getElementById("Chart2").getContext("2d");
+    var barChart = new Chart(popCanvas, {
+  type: 'line',
+  data: {
+    labels: ["6","7","8","9","10","11","12","13","14","15"],
+    datasets: [{
+      label: '平均消费',
+      data: [3, 10, 5, 4, 5, 9, 15, 17, 9, 6],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(255, 206, 86, 0.6)',
+        'rgba(75, 192, 192, 0.6)',
+        'rgba(153, 102, 255, 0.6)',
+        'rgba(255, 159, 64, 0.6)',
+        'rgba(255, 99, 132, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(255, 206, 86, 0.6)',
+        'rgba(75, 192, 192, 0.6)',
+        'rgba(153, 102, 255, 0.6)'
+        
+      ]
+    }]
+  }
+});
+  </script>
+  <script type="text/javascript">
+    // <canvas id="popChart" width="600" height="400"></canvas>
+    var popCanvas = $("#Chart3");
+    var popCanvas = document.getElementById("Chart3");
+    var popCanvas = document.getElementById("Chart3").getContext("2d");
+    var barChart = new Chart(popCanvas, {
+  type: 'radar',
+  data: {
+    labels: ["酸", "辣", "甜", "清汤", "苦"],
+    datasets: [{
+      label: '销量',
+      data: [433, 1001, 397, 409, 105],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.6)',
+        
+      ]
+    }]
+  }
+});
+  </script>
+  <script type="text/javascript">
+    // <canvas id="popChart" width="600" height="400"></canvas>
+    var popCanvas = $("#Chart4");
+    var popCanvas = document.getElementById("Chart4");
+    var popCanvas = document.getElementById("Chart4").getContext("2d");
+    var barChart = new Chart(popCanvas, {
+  type: 'pie',
+  data: {
+    labels: ["猪肉（单位kg）", "牛肉（单位kg）", "羊肉（单位kg）", "酸菜（单位kg）", "面粉（单位kg）", "面条（单位kg）", "珍珠米（单位kg）", "莴笋（单位kg）", "白菜（单位kg）", "土豆（单位kg）"],
+    datasets: [{
+      label: '用量（单位kg）',
+      data: [50, 25, 13, 4, 25, 16, 7, 8, 9, 10],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(255, 206, 86, 0.6)',
+        'rgba(75, 192, 192, 0.6)',
+        'rgba(153, 102, 255, 0.6)',
+        'rgba(255, 159, 64, 0.6)',
+        'rgba(255, 99, 132, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(255, 206, 86, 0.6)',
+        'rgba(75, 192, 192, 0.6)',
+        'rgba(153, 102, 255, 0.6)'
+      ]
+    }]
+  }
+});
+  </script>
+<script>
+  $(document).ready(function () {
+      $(".main a").click(function (e) {
+          e.preventDefault();
+
+          $(".main .active").removeClass("active");
+          $(this).addClass("active");
+
+          $(".content .expanded").toggleClass("expanded collapse");
+          var id = $(this).attr("href");
+          $(`#${id}`).toggleClass("expanded collapse");
+      });
+  });
+</script>
+</body>
+</html>
